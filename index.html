@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090611">
+<title>MolokSa3aSmp — Rank Applications</title>
+<style>
+:root{--bg:#08060f;--panel:#100d1b;--panel2:#171126;--line:#302342;--purple:#a855f7;--violet:#7c3aed;--pink:#e879f9;--text:#f7f3ff;--muted:#b8adc9;--green:#86efac}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#452078 0,transparent 44%),radial-gradient(ellipse at 100% 45%,#211044 0,transparent 35%),var(--bg);color:var(--text);font:15px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;min-height:100vh}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.2px}.logo{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--purple),#5b21b6);display:grid;place-items:center;box-shadow:0 0 28px #a855f744;font-size:20px}.brand em{font-style:normal;color:#d8b4fe}
+nav{display:flex;gap:22px}nav a{text-decoration:none;color:var(--muted);font-weight:650;font-size:14px}nav a:hover{color:white}
+.hero{text-align:center;padding:78px 0 44px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid #a855f755;border-radius:999px;color:#e9d5ff;background:#a855f714;font-size:11px;font-weight:900;letter-spacing:2px}.dot{width:7px;height:7px;border-radius:50%;background:#c084fc;box-shadow:0 0 12px #c084fc}
+h1{font-size:clamp(42px,7vw,78px);line-height:.99;letter-spacing:-3px;margin:24px 0 20px;font-weight:950}.gradient{background:linear-gradient(90deg,#fff 8%,#d8b4fe 48%,#e879f9 95%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 19px;border-radius:12px;border:1px solid transparent;background:linear-gradient(120deg,#9333ea,#6d28d9);color:white;font-weight:850;text-decoration:none;cursor:pointer;font:inherit;font-weight:850;box-shadow:0 9px 30px #7c3aed26;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}.btn.secondary{background:#ffffff06;border-color:#ffffff20;box-shadow:none}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:26px 0 17px}.section-head h2{font-size:26px;letter-spacing:-.8px;margin:0}.section-head p{color:var(--muted);margin:0;font-size:13px}
+.roles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:13px}.role{--accent:#c084fc;position:relative;overflow:hidden;background:linear-gradient(160deg,#1c142b,#0e0b16 75%);border:1px solid #ffffff14;border-radius:17px;padding:18px 15px;min-height:177px;cursor:pointer;transition:.2s;text-align:left;color:var(--text);font:inherit}.role:before{content:"";position:absolute;width:130px;height:130px;right:-75px;top:-75px;background:var(--accent);filter:blur(70px);opacity:.22}.role:hover,.role.active{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 10px 35px #0004,0 0 0 1px color-mix(in srgb,var(--accent) 25%,transparent)}.role.active{background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 18%,#1c142b),#0e0b16 80%)}.role-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:13px;background:color-mix(in srgb,var(--accent) 17%,transparent);color:var(--accent);font-size:22px;margin-bottom:13px;border:1px solid color-mix(in srgb,var(--accent) 24%,transparent)}.role strong{display:block;font-size:16px}.role small{display:block;color:var(--muted);font-size:12px;margin-top:4px}.role .select-mark{position:absolute;right:12px;top:12px;color:var(--accent);font-size:13px;opacity:0}.role.active .select-mark{opacity:1}
+.content-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:18px;align-items:start;margin:22px 0 75px}.info,.form-card{background:linear-gradient(145deg,#171126eF,#0e0b17f7);border:1px solid #ffffff16;border-radius:20px;padding:25px;box-shadow:0 20px 60px #0002}.info h3,.form-card h2{margin:0 0 7px;font-size:22px;letter-spacing:-.5px}.muted{color:var(--muted)}.info p{font-size:14px}.checklist{list-style:none;padding:0;margin:20px 0 0}.checklist li{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #ffffff0c;color:#ded6ec;font-size:13px}.checklist li:last-child{border:0}.check{color:#c4b5fd;font-weight:900}.mini-label{font-size:11px;letter-spacing:1.6px;color:#c4b5fd;font-weight:900}.form-top{display:flex;justify-content:space-between;align-items:start;gap:10px}.badge{font-size:11px;color:#e9d5ff;border:1px solid #a855f755;background:#a855f718;border-radius:999px;padding:5px 9px;white-space:nowrap}
+label{display:block;font-size:13px;font-weight:750;margin:16px 0 7px}input,select,textarea{width:100%;background:#090711;color:var(--text);border:1px solid #39294d;border-radius:11px;padding:12px 13px;font:inherit;outline:none;transition:.15s}input:focus,select:focus,textarea:focus{border-color:#a855f7;box-shadow:0 0 0 3px #a855f71c}select option{background:#100d1b}textarea{resize:vertical;min-height:105px}.two{display:grid;grid-template-columns:1fr 1fr;gap:13px}.hint{font-size:12px;color:var(--muted);margin:6px 0 0}.agree{display:flex;align-items:start;gap:9px;font-size:12px;color:var(--muted);font-weight:500}.agree input{width:16px;margin-top:4px;accent-color:#a855f7}.submit{width:100%;margin-top:18px}.status{display:none;padding:12px 14px;border-radius:11px;margin-top:13px;font-size:13px;overflow-wrap:anywhere}.status.ok{display:block;background:#052e22;border:1px solid #166534;color:#bbf7d0}.status.err{display:block;background:#3b1019;border:1px solid #7f1d1d;color:#fecaca}.status.info{display:block;background:#21143b;border:1px solid #5b21b6;color:#e9d5ff}
+footer{border-top:1px solid #ffffff12;padding:25px 0;color:#9388a6;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:950px){.roles{grid-template-columns:repeat(3,1fr)}.content-grid{grid-template-columns:1fr}.info{order:2}}@media(max-width:580px){.wrap{width:min(100% - 24px,1120px)}header{height:66px}.brand{font-size:14px}.logo{width:35px;height:35px}nav{gap:12px}nav a{font-size:12px}.hero{padding:57px 0 32px}h1{letter-spacing:-2px}.hero p{font-size:15px}.roles{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.role{min-height:153px;padding:14px}.section-head{display:block}.section-head p{margin-top:5px}.info,.form-card{padding:19px}.two{grid-template-columns:1fr}.role:last-child{grid-column:span 2}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#" style="text-decoration:none"><span class="logo">✦</span><span>MOLOK<em>SA3ASMP</em></span></a>
+  <nav><a href="#ranks">Ranks</a><a href="#apply">Apply now ↗</a></nav>
+</header>
+<main class="wrap">
+<section class="hero">
+  <span class="eyebrow"><span class="dot"></span> OFFICIAL RANK APPLICATIONS</span>
+  <h1>Your next level<br>starts <span class="gradient">here.</span></h1>
+  <p>Join the team, show what you can do, and make your mark on MolokSa3aSmp. Choose a rank and send your application to our team.</p>
+  <div class="hero-actions"><a class="btn" href="#ranks">Explore ranks <span>↓</span></a><a class="btn secondary" href="#apply">Submit application ↗</a></div>
+</section>
+<section id="ranks">
+ <div class="section-head"><div><div class="mini-label">FIND YOUR ROLE</div><h2>Choose your rank</h2></div><p>Select a card to apply for that rank.</p></div>
+ <div class="roles" role="group" aria-label="Choose a rank">
+  <button class="role active" style="--accent:#d879ff" data-rank="Media" type="button"><span class="select-mark">✓ SELECTED</span><span class="role-icon">✦</span><strong>Media</strong><small>Content creator</small></button>
+  <button class="role" style="--accent:#fb7185" data-rank="Streamer" type="button"><span class="select-mark">✓ SELECTED</span><span class="role-icon">◉</span><strong>Streamer</strong><small>Live creator</small></button>
+  <button class="role" style="--accent:#f871d8" data-rank="YouTuber" type="button"><span class="select-mark">✓ SELECTED</span><span class="role-icon">▶</span><strong>YouTuber</strong><small>Video creator</small></button>
+  <button class="role" style="--accent:#fbbf24" data-rank="Admin" type="button"><span class="select-mark">✓ SELECTED</span><span class="role-icon">♜</span><strong>Admin</strong><small>Staff application</small></button>
+  <button class="role" style="--accent:#60a5fa" data-rank="Helper" type="button"><span class="select-mark">✓ SELECTED</span><span class="role-icon">✚</span><strong>Helper</strong><small>Help the community</small></button>
+ </div>
+</section>
+<section class="content-grid" id="apply">
+ <aside class="info"><div class="mini-label">APPLICATION GUIDE</div><h3>Make it count.</h3><p class="muted">Take your time and give the team enough detail to review your request fairly.</p>
+  <ul class="checklist"><li><span class="check">✓</span><span>Use your real Minecraft username.</span></li><li><span class="check">✓</span><span>Provide a working Discord username.</span></li><li><span class="check">✓</span><span>Answer honestly and include useful details.</span></li><li><span class="check">✓</span><span>Staff applications are reviewed by the server team.</span></li></ul>
+  <p class="hint" style="margin-top:20px">Submitting a form does not guarantee acceptance. Please do not submit repeated applications.</p>
+ </aside>
+ <section class="form-card">
+  <div class="form-top"><div><div class="mini-label">JOIN THE TEAM</div><h2>Application form</h2></div><span class="badge" id="rankBadge">RANK: MEDIA</span></div>
+  <p class="muted" style="font-size:13px;margin:4px 0 10px">Fields marked * are required.</p>
+  <form id="applicationForm">
+   <input type="hidden" id="rank" name="rank" value="Media">
+   <div class="two"><div><label for="mc">Minecraft username *</label><input id="mc" name="minecraft_username" required maxlength="16" pattern="[A-Za-z0-9_]{3,16}" placeholder="YourMinecraftName"></div><div><label for="discord">Discord username *</label><input id="discord" name="discord_username" required maxlength="80" placeholder="username"></div></div>
+   <div id="creatorFields"><div class="two"><div><label for="platform">Main platform *</label><select id="platform" name="platform"><option value="">Choose platform</option><option>YouTube</option><option>TikTok</option><option>Twitch</option><option>Kick</option><option>Other</option></select></div><div><label for="followers">Followers / subscribers *</label><input id="followers" name="followers" maxlength="30" placeholder="e.g. 1,200"></div></div><label for="link">Channel / profile link *</label><input id="link" name="channel_url" type="url" maxlength="300" placeholder="https://..."></div>
+   <div id="staffFields" hidden><label for="age">Age *</label><input id="age" name="age" type="number" min="13" max="99" placeholder="Your age"><label for="experience">Previous experience *</label><textarea id="experience" name="experience" minlength="10" maxlength="1000" placeholder="Have you helped or moderated a Minecraft server before?"></textarea></div>
+   <label for="reason">Why should we choose you? *</label><textarea id="reason" name="reason" required minlength="20" maxlength="1200" placeholder="Tell us about yourself and why you want this rank..."></textarea>
+   <label class="agree"><input type="checkbox" id="agree" required><span>I confirm these details are accurate and agree to be contacted about this application.</span></label>
+   <button class="btn submit" type="submit">SEND APPLICATION <span>↗</span></button><div id="status" class="status" role="status" aria-live="polite"></div>
+  </form>
+ </section>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> MolokSa3aSmp. All rights reserved.</span><span>Built for the community · <span style="color:#c4b5fd">Minecraft ranks</span></span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL = "PASTE_YOUR_SUPABASE_PROJECT_URL_HERE";
+const SUPABASE_ANON_KEY = "PASTE_YOUR_SUPABASE_ANON_KEY_HERE";
+const form = document.getElementById('applicationForm'), statusBox = document.getElementById('status');
+document.getElementById('year').textContent = new Date().getFullYear();
+const rankInput=document.getElementById('rank'), rankBadge=document.getElementById('rankBadge');
+const creatorFields=document.getElementById('creatorFields'), staffFields=document.getElementById('staffFields');
+const platform=document.getElementById('platform'), followers=document.getElementById('followers'), link=document.getElementById('link'), age=document.getElementById('age'), experience=document.getElementById('experience');
+document.querySelectorAll('.role').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.role').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+ const rank=btn.dataset.rank;rankInput.value=rank;rankBadge.textContent='RANK: '+rank.toUpperCase();
+ const staff=['Admin','Helper'].includes(rank);creatorFields.hidden=staff;staffFields.hidden=!staff;
+ platform.required=!staff;followers.required=!staff;link.required=!staff;age.required=staff;experience.required=staff;
+}));
+form.addEventListener('submit',async e=>{
+ e.preventDefault();statusBox.className='status info';statusBox.textContent='Submitting your application...';
+ if(SUPABASE_URL.includes('PASTE_')||SUPABASE_ANON_KEY.includes('PASTE_')){statusBox.className='status err';statusBox.textContent='The site owner still needs to connect the database. Please try again later.';return}
+ try{
+  const client=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
+  const d=Object.fromEntries(new FormData(form).entries());delete d.agree;
+  const {error}=await client.from('media_applications').insert([d]);
+  if(error)throw error;
+  statusBox.className='status ok';statusBox.textContent='Application submitted successfully! The team will review it.';form.reset();
+  document.querySelectorAll('.role').forEach(b=>b.classList.toggle('active',b.dataset.rank==='Media'));
+  rankInput.value='Media';rankBadge.textContent='RANK: MEDIA';creatorFields.hidden=false;staffFields.hidden=true;platform.required=true;followers.required=true;link.required=true;age.required=false;experience.required=false;
+ }catch(err){statusBox.className='status err';statusBox.textContent='Could not submit right now. Please check your details or try again later.'}
+});
+</script>
+</body></html>
